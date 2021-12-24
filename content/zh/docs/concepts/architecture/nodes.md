@@ -88,7 +88,7 @@ field of the Node. If the node is healthy (if all necessary services are running
 it is eligible to run a Pod. Otherwise, that node is ignored for any cluster activity
 until it becomes healthy.
 -->
-Kubernetes 会在内部创建一个 Node 对象作为节点的表示。Kubernetes 检查 `kubelet`
+Kubernetes 会在内部创建一个 Node 对象作为节点的标识。Kubernetes 检查 `kubelet`
 向 API 服务器注册节点时使用的 `metadata.name` 字段是否匹配。
 如果节点是健康的（即所有必要的服务都在运行中），则该节点可以用来运行 Pod。
 否则，直到该节点变为健康之前，所有的集群活动都会忽略该节点。 
